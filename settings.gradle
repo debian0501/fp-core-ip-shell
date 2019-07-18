@@ -1,0 +1,6 @@
+rootProject.name = 'tictactoe'
+include 'tictactoe-core', 'tictactoe-shell'
+
+
+
+
