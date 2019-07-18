@@ -1,0 +1,234 @@
+targets: tictactoe-core
+constraints: 
+  any.base installed (non-upgradeable package)
+  any.ghc-prim installed (non-upgradeable package)
+  any.integer installed (non-upgradeable package)
+  any.rts installed (non-upgradeable package)
+  any.eta-meta installed (non-upgradeable package)
+  any.template-haskell installed (non-upgradeable package)
+  setup.etlas-cabal >=1.20 (minimum version of etlas-cabal used by Setup.hs)
+  StateVar ==1.2 (project config TODO)
+  adjunctions ==4.4 (project config TODO)
+  array ==0.5.2.0 (project config TODO)
+  base ==4.11.1.0 (project config TODO)
+  base-orphans ==0.8 (project config TODO)
+  bifunctors ==5.5.3 (project config TODO)
+  flags bifunctors +tagged +semigroups (project config TODO)
+  binary ==0.8.5.1 (project config TODO)
+  bytestring ==0.10.8.2 (project config TODO)
+  call-stack ==0.1.0 (project config TODO)
+  comonad ==5.0.2 (project config TODO)
+  flags comonad +test-doctests +distributive +contravariant +containers (project config TODO)
+  containers ==0.5.10.2 (project config TODO)
+  contravariant ==1.5.2 (project config TODO)
+  flags contravariant +tagged +statevar +semigroups (project config TODO)
+  deepseq ==1.4.3.0 (project config TODO)
+  directory ==1.3.1.0 (project config TODO)
+  distributive ==0.5.3 (project config TODO)
+  flags distributive +tagged +semigroups (project config TODO)
+  eta-boot ==0.8.6 (project config TODO)
+  eta-boot-meta ==0.8.6 (project config TODO)
+  eta-java-interop ==0.1.5.0 (project config TODO)
+  eta-meta ==0.8.6.4 (project config TODO)
+  eta-repl ==0.8.6.4 (project config TODO)
+  exceptions ==0.10.2 (project config TODO)
+  fail ==4.9.0.0 (project config TODO)
+  filepath ==1.4.1.2 (project config TODO)
+  free ==5.1.1 (project config TODO)
+  generic-deriving ==1.11.2 (project config TODO)
+  flags generic-deriving -base-4-9 (project config TODO)
+  ghc-prim ==0.4.0.0 (project config TODO)
+  hashable ==1.2.7.0 (project config TODO)
+  flags hashable -sse41 +sse2 +integer-gmp -examples (project config TODO)
+  integer ==0.5.1.0 (project config TODO)
+  invariant ==0.5.3 (project config TODO)
+  kan-extensions ==5.2 (project config TODO)
+  lens ==4.17 (project config TODO)
+  flags lens +trustworthy +test-templates +test-properties +test-hunit +test-doctests -safe -old-inline-pragmas -j +inlining -dump-splices -benchmark-uniplate (project config TODO)
+  mtl ==2.2.2 (project config TODO)
+  parallel ==3.2.2.0 (project config TODO)
+  pretty ==1.1.3.6 (project config TODO)
+  primitive ==0.6.4.0 (project config TODO)
+  profunctors ==5.4 (project config TODO)
+  reflection ==2.1.2 (project config TODO)
+  flags reflection -template-haskell -slow (project config TODO)
+  rts ==0.1.0.0 (project config TODO)
+  semigroupoids ==5.3.1 (project config TODO)
+  flags semigroupoids +unordered-containers +tagged +doctests +distributive +contravariant +containers +comonad (project config TODO)
+  semigroups ==0.18.5 (project config TODO)
+  flags semigroups +unordered-containers +transformers +text +tagged +hashable +deepseq +containers -bytestring-builder +bytestring +binary (project config TODO)
+  stm ==2.5.0.0 (project config TODO)
+  tagged ==0.8.6 (project config TODO)
+  flags tagged +transformers +deepseq (project config TODO)
+  template-haskell ==2.11.1.0 (project config TODO)
+  text ==1.2.3.0 (project config TODO)
+  flags text -integer-simple -developer -bytestring-builder (project config TODO)
+  th-abstraction ==0.2.11.0 (project config TODO)
+  time ==1.8.0.3 (project config TODO)
+  transformers ==0.5.5.0 (project config TODO)
+  transformers-base ==0.4.5.2 (project config TODO)
+  flags transformers-base +orphaninstances (project config TODO)
+  transformers-compat ==0.6.5 (project config TODO)
+  flags transformers-compat -two -three +mtl +generic-deriving -four +five-three -five (project config TODO)
+  unordered-containers ==0.2.9.0 (project config TODO)
+  flags unordered-containers -debug (project config TODO)
+  vector ==0.12.0.1 (project config TODO)
+  flags vector -wall -unsafechecks -internalchecks +boundschecks (project config TODO)
+  void ==0.7.3 (project config TODO)
+  flags void -safe (project config TODO)
+  flags tictactoe-core (config file, command line flag, or user target)
+  tictactoe-core ==1.0 (user target)
+strategy: PreferLatestForSelected
+reorder goals: False
+count conflicts: True
+independent goals: False
+avoid reinstalls: False
+shadow packages: False
+strong flags: False
+allow boot library installs: False
+max backjumps: 2000
+[__0] trying: tictactoe-core-1.0 (user goal)
+[__1] trying: base-4.11.1.0/installed-9g5... (dependency of tictactoe-core-1.0)
+[__2] trying: integer-0.5.1.0/installed-ACy... (dependency of base-4.11.1.0/installed-9g5...)
+[__3] trying: ghc-prim-0.4.0.0/installed-Jhi... (dependency of base-4.11.1.0/installed-9g5...)
+[__4] trying: rts-0.1.0.0/installed-5Dj... (dependency of base-4.11.1.0/installed-9g5...)
+[__5] trying: lens-4.17 (dependency of tictactoe-core-1.0)
+[__6] trying: lens-4.17:!bench
+[__7] trying: lens-4.17:!test
+[__8] trying: lens-4.17:+trustworthy
+[__9] trying: generic-deriving-1.11.2 (dependency of lens-4.17)
+[_10] trying: generic-deriving-1.11.2:!test
+[_11] trying: void-0.7.3 (dependency of lens-4.17)
+[_12] trying: vector-0.12.0.1 (dependency of lens-4.17)
+[_13] trying: vector-0.12.0.1:!test
+[_14] trying: deepseq-1.4.3.0/installed-2mY... (dependency of vector-0.12.0.1)
+[_15] trying: primitive-0.6.4.0 (dependency of vector-0.12.0.1)
+[_16] trying: unordered-containers-0.2.9.0 (dependency of lens-4.17)
+[_17] trying: unordered-containers-0.2.9.0:!bench
+[_18] trying: unordered-containers-0.2.9.0:!test
+[_19] trying: transformers-compat-0.6.5 (dependency of lens-4.17)
+[_20] trying: transformers-compat-0.6.5:+mtl
+[_21] trying: transformers-compat-0.6.5:+generic-deriving
+[_22] trying: fail-4.9.0.0 (dependency of transformers-compat-0.6.5)
+[_23] trying: transformers-0.5.5.0 (dependency of lens-4.17)
+[_24] trying: text-1.2.3.0 (dependency of lens-4.17)
+[_25] trying: text-1.2.3.0:!test
+[_26] trying: eta-java-interop-0.1.5.0 (dependency of text-1.2.3.0)
+[_27] trying: binary-0.8.5.1/installed-7Gt... (dependency of text-1.2.3.0)
+[_28] next goal: th-abstraction (dependency of lens-4.17)
+[_28] rejecting: th-abstraction-0.3.1.0, th-abstraction-0.3.0.0 (constraint from project config TODO requires ==0.2.11.0)
+[_28] trying: th-abstraction-0.2.11.0
+[_29] trying: th-abstraction-0.2.11.0:!test
+[_30] trying: template-haskell-2.11.1.0/installed-5GB... (dependency of lens-4.17)
+[_31] trying: eta-meta-0.8.6.4/installed-2me... (dependency of template-haskell-2.11.1.0/installed-5GB...)
+[_32] trying: pretty-1.1.3.6/installed-Jc3... (dependency of eta-meta-0.8.6.4/installed-2me...)
+[_33] trying: eta-repl-0.8.6.4/installed-Lhy... (dependency of eta-meta-0.8.6.4/installed-2me...)
+[_34] trying: eta-boot-meta-0.8.6/installed-624... (dependency of eta-meta-0.8.6.4/installed-2me...)
+[_35] trying: eta-boot-0.8.6/installed-Ego... (dependency of eta-meta-0.8.6.4/installed-2me...)
+[_36] trying: directory-1.3.1.0/installed-EtC... (dependency of eta-boot-0.8.6/installed-Ego...)
+[_37] trying: time-1.8.0.3/installed-7Qq... (dependency of directory-1.3.1.0/installed-EtC...)
+[_38] trying: tagged-0.8.6 (dependency of lens-4.17)
+[_39] trying: tagged-0.8.6:+transformers
+[_40] trying: tagged-0.8.6:+deepseq
+[_41] trying: semigroups-0.18.5 (dependency of lens-4.17)
+[_42] trying: semigroupoids-5.3.1 (dependency of lens-4.17)
+[_43] trying: semigroupoids-5.3.1:!test
+[_44] trying: semigroupoids-5.3.1:+unordered-containers
+[_45] trying: semigroupoids-5.3.1:+tagged
+[_46] trying: semigroupoids-5.3.1:+comonad
+[_47] trying: semigroupoids-5.3.1:+distributive
+[_48] trying: semigroupoids-5.3.1:+contravariant
+[_49] trying: semigroupoids-5.3.1:+containers
+[_50] trying: reflection-2.1.2 (dependency of lens-4.17)
+[_51] trying: profunctors-5.4 (dependency of lens-4.17)
+[_52] trying: parallel-3.2.2.0 (dependency of lens-4.17)
+[_53] trying: mtl-2.2.2 (dependency of lens-4.17)
+[_54] trying: exceptions-0.10.2 (dependency of lens-4.17)
+[_55] trying: exceptions-0.10.2:!test
+[_56] trying: stm-2.5.0.0 (dependency of exceptions-0.10.2)
+[_57] trying: kan-extensions-5.2 (dependency of lens-4.17)
+[_58] trying: invariant-0.5.3 (dependency of kan-extensions-5.2)
+[_59] trying: invariant-0.5.3:!test
+[_60] trying: StateVar-1.2 (dependency of invariant-0.5.3)
+[_61] trying: adjunctions-4.4 (dependency of kan-extensions-5.2)
+[_62] trying: adjunctions-4.4:!test
+[_63] trying: hashable-1.2.7.0 (dependency of lens-4.17)
+[_64] trying: hashable-1.2.7.0:!bench
+[_65] trying: hashable-1.2.7.0:!test
+[_66] trying: hashable-1.2.7.0:-examples
+[_67] next goal: free (dependency of lens-4.17)
+[_67] rejecting: free-4.12.4 (constraint from project config TODO requires ==5.1.1)
+[_67] trying: free-5.1.1
+[_68] trying: transformers-base-0.4.5.2 (dependency of free-5.1.1)
+[_69] trying: filepath-1.4.1.2/installed-8pX... (dependency of lens-4.17)
+[_70] trying: distributive-0.5.3 (dependency of lens-4.17)
+[_71] trying: distributive-0.5.3:!test
+[_72] trying: distributive-0.5.3:+semigroups
+[_73] trying: distributive-0.5.3:+tagged
+[_74] trying: containers-0.5.10.2/installed-CrB... (dependency of lens-4.17)
+[_75] next goal: contravariant (dependency of lens-4.17)
+[_75] rejecting: contravariant-1.4, contravariant-1.3.3 (constraint from project config TODO requires ==1.5.2)
+[_75] trying: contravariant-1.5.2
+[_76] trying: contravariant-1.5.2:+statevar
+[_77] trying: contravariant-1.5.2:+semigroups
+[_78] trying: comonad-5.0.2 (dependency of lens-4.17)
+[_79] trying: comonad-5.0.2:!test
+[_80] trying: comonad-5.0.2:+distributive
+[_81] trying: comonad-5.0.2:+contravariant
+[_82] trying: comonad-5.0.2:+containers
+[_83] trying: call-stack-0.1.0 (dependency of lens-4.17)
+[_84] trying: call-stack-0.1.0:!test
+[_85] trying: bytestring-0.10.8.2/installed-DA3... (dependency of lens-4.17)
+[_86] trying: bifunctors-5.5.3 (dependency of lens-4.17)
+[_87] trying: bifunctors-5.5.3:!test
+[_88] trying: bifunctors-5.5.3:+semigroups
+[_89] trying: bifunctors-5.5.3:+tagged
+[_90] trying: base-orphans-0.8 (dependency of lens-4.17)
+[_91] trying: base-orphans-0.8:!test
+[_92] trying: array-0.5.2.0/installed-Cz0... (dependency of lens-4.17)
+[_93] trying: comonad-5.0.2:+test-doctests
+[_94] trying: contravariant-1.5.2:+tagged
+[_95] trying: transformers-base-0.4.5.2:+orphaninstances
+[_96] trying: hashable-1.2.7.0:+integer-gmp
+[_97] trying: hashable-1.2.7.0:-sse41
+[_98] trying: hashable-1.2.7.0:+sse2
+[_99] trying: reflection-2.1.2:-slow
+[100] trying: reflection-2.1.2:-template-haskell
+[101] trying: semigroupoids-5.3.1:+doctests
+[102] trying: semigroups-0.18.5:+unordered-containers
+[103] trying: semigroups-0.18.5:+transformers
+[104] trying: semigroups-0.18.5:+text
+[105] trying: semigroups-0.18.5:+tagged
+[106] trying: semigroups-0.18.5:+hashable
+[107] trying: semigroups-0.18.5:+deepseq
+[108] trying: semigroups-0.18.5:+containers
+[109] trying: semigroups-0.18.5:-bytestring-builder
+[110] trying: semigroups-0.18.5:+bytestring
+[111] trying: semigroups-0.18.5:+binary
+[112] trying: text-1.2.3.0:-integer-simple
+[113] trying: text-1.2.3.0:-developer
+[114] trying: text-1.2.3.0:-bytestring-builder
+[115] trying: transformers-compat-0.6.5:-two
+[116] trying: transformers-compat-0.6.5:-three
+[117] trying: transformers-compat-0.6.5:-four
+[118] trying: transformers-compat-0.6.5:-five
+[119] rejecting: transformers-compat-0.6.5:-five-three (constraint from project config TODO requires opposite flag selection)
+[119] trying: transformers-compat-0.6.5:+five-three
+[120] trying: unordered-containers-0.2.9.0:-debug
+[121] trying: vector-0.12.0.1:-internalchecks
+[122] trying: vector-0.12.0.1:-unsafechecks
+[123] trying: vector-0.12.0.1:+boundschecks
+[124] trying: vector-0.12.0.1:-wall
+[125] trying: void-0.7.3:-safe
+[126] trying: generic-deriving-1.11.2:-base-4-9
+[127] trying: lens-4.17:-j
+[128] trying: lens-4.17:+inlining
+[129] trying: lens-4.17:-old-inline-pragmas
+[130] trying: lens-4.17:-safe
+[131] trying: lens-4.17:+test-templates
+[132] trying: lens-4.17:+test-properties
+[133] trying: lens-4.17:+test-hunit
+[134] trying: lens-4.17:+test-doctests
+[135] trying: lens-4.17:-dump-splices
+[136] trying: lens-4.17:-benchmark-uniplate
+[137] done

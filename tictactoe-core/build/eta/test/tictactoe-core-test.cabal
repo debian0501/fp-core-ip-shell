@@ -1,0 +1,11 @@
+name: tictactoe-core-test
+version: 1.0
+cabal-version: >= 1.10
+build-type: Simple
+library
+    hs-source-dirs: /Users/stefanl/Documents/projects/eta/tictactoe/tictactoe-core/src/test/eta
+    build-depends: base
+                 , base == 4.11.1.0
+                 , lens 
+                 , tictactoe-core
+    default-language: Haskell2010

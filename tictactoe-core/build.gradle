@@ -1,0 +1,13 @@
+plugins {
+    id 'com.typelead.eta'
+}
+
+apply plugin: 'idea'
+
+dependencies {
+    compile eta('base:4.11.1.0')
+    compile eta('lens')
+}
+
+
+
