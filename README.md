@@ -1,5 +1,4 @@
 # Eta (Imperative shell /functional core)
-#fp #blog
 
 ## Einleitung
 Die funktionale Programmierung verbessert die Software-Qualität durch die Vermeidung von Seiteneffekten. Eine Funktion tut nicht mehr als Parameter entgegenzunehmen einen Algorithmus ausführen und das Ergebnis zurückgeben. So eine Funktion bezeichnet man als pure function. Doch sind in jedem realen Programm auch Seiteneffekte notwendig, wie z.B. Lesen aus der Datenbank, Logging, Ausgaben auf die Konsole usw. Diese Kommunikation mit der Außenwelt wird in der funktionalen Programmierung mittels Monaden gekapselt, damit der Code weiterhin pure bleibt. Das geht soweit, dass für jedes Feature, wie z.B. Lesen, Schreiben, Zustand eine eigene Monade genutzt wird und diese dann aufeinander geschichtet werden. Hört sich kompliziert an, ist es auch. Was in der imperativen Programmierung einfache Anweisungen sind, sind in der funktionalen Programmierung komplexe Strukturen mit oft auch schlechter Laufzeit[^1]. 
